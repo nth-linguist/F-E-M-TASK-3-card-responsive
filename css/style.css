@@ -1,0 +1,124 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+ }
+ 
+body {
+   background-color: hsla(194, 77%, 72%, 0.75);
+   color: hsla(0, 0%, 100%, 0.75);
+}
+
+h3 {
+font-family: 'Big Shoulders Display', sans-serif;
+text-transform: uppercase;
+font-size: 2rem;
+}
+
+button {
+    border: 0.1rem;
+    border-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border-style: solid;
+}
+
+.bright-orange {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.dark-cyan {
+    background-color:hsl(184, 100%, 22%);
+
+}
+
+.very-dark-cyan {
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0 0 1rem 1rem;
+}
+
+#btn-sed {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn-suv {
+    color:     hsl(184, 100%, 22%);
+}
+
+#btn-lux {
+    color:     hsl(179, 100%, 13%);
+}
+
+#btn-sed:hover, #btn-suv:hover, #btn-lux:hover {
+    color: hsl(0, 0%, 95%);
+    background-color:rgba(255, 255, 255, 0);
+    border: 0.1rem;
+    border-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.4s eas;
+}
+
+.card > img{
+    margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.card > h3, .card > p , .card > button {
+    margin: 0 0 1rem 0;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+.container {
+    margin: 4rem 4rem 4rem 4rem;
+}
+
+/* qualities for page above 992px 
+992px < page */
+
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin:auto;
+    }
+
+    .bright-orange {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .very-dark-cyan {
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .card > h3, .card > p , .card > button {
+        margin: 0 0 4rem 0;
+    }
+
+    .card {
+        height: 500px;
+    }
+}
+
+
+/* Transparent white (paragraphs): 
+    hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons):    hsl(0, 0%, 95%)
+
+Bright orange: 
+    hsl(31, 77%, 52%)
+Dark cyan: 
+    hsl(184, 100%, 22%)
+Very dark cyan: 
+    hsl(179, 100%, 13%)
+
+*/
